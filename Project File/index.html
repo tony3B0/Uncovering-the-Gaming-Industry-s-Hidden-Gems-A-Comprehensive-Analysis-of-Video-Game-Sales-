@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../static/img/chart.svg" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../static/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../static/css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <title>Video Game Dashboard</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <nav class="navbar">
+        <h1 class="navbar-head"><i class="fas fa-gamepad"></i> DASHBOARD</h1>
+      </nav>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="owl-carousel owl-theme">
+          {% for item in quotes %}
+          <div class="card">
+            <div class="card-body">
+              <div class="card-text">
+                <div class="card-text">
+                  <p>{{item}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Select A Sales Region:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)">
+            <option value="na_sales">North America</option>
+            <option value="eu_sales">Europe</option>
+            <option value="jp_sales">Japan</option>
+            <option value="other_sales">Other</option>
+            <option value="global_sales">Global</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div id="bar"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div id="pie"></div>
+      </div>
+      <div class="col-md-6">
+        <div id="line"></div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>
+      &#9432; 3rd party dark-mode extensions may interfere with
+      chart visualization contrast when enabled!
+    </p>
+  </footer>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/owl.carousel.min.js"></script>
+  <script src="static/js/script.js"></script>
+</body>
+
+</html>

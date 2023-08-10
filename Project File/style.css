@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@300&display=swap');
+
+/* BODY STYLING */
+
+body {
+  background-color: #111111 !important;
+  color: white !important;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CONTAINER STYLING */
+
+.container {
+  padding-bottom: 3rem;
+  justify-content: center;
+}
+
+/* NAVBAR STYLING */
+
+nav {
+  background-color: #222222;
+  font-size: 30px;
+  padding-left: 5rem;
+  padding-top: 3px;
+  width: 100%;
+}
+
+/* NAVBAR HEADER STYLING */
+
+i {
+  color: #dec26d;
+  padding-right: 10px;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+/* OWL SETTINGS */
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 18rem;
+}
+
+.card {
+  border: solid white 3px;
+  border-radius: 10px;
+  background-color: #0a0a0a;
+}
+
+.owl-carousel {
+  padding-bottom: 5rem;
+}
+
+.owl-dots {
+  padding-top: 2rem;
+}
+
+.card-text {
+  text-align: center;
+}
+/* DROPDOWN STYLING */
+
+#selDataset {
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.sample-metadata,
+#sample-metadata {
+  background-color: #0a0a0a;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin: -1px;
+}
+
+div .well {
+  border: 0px;
+  border-radius: 0px;
+  margin-bottom: 5rem;
+  background-color: #0a0a0a;
+  color: white;
+  border: 2px solid white;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+/* SIMILAR GRAPH STYLING */
+
+#pie,
+#line {
+  margin-top: 40px;
+  width: 100%;
+}
+
+#line {
+  padding-left: 1rem;
+}
+
+#pie {
+  padding-right: 1rem;
+}
+
+/* FOOTER STYLING */
+footer {
+  text-align: center;
+  padding-top: 10rem;
+  margin-top: auto;
+  color: maroon;
+  font-size: 15px;
+  font-weight: 600;
+}
